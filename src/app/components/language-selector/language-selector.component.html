@@ -1,0 +1,10 @@
+
+
+<p class="mt-10">Language selector</p>
+
+<select class="flex">
+    @for (lan of languages(); track $index) {
+        <option [value]="lan.code">{{lan.code}} {{lan.flag}}</option>
+    }
+</select>
+
